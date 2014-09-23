@@ -1,0 +1,63 @@
+<dataConfig>
+<dataSource name="jdbc" driver="oracle.jdbc.driver.OracleDriver" url="jdbc:oracle:thin:@//localhost:1521/XE" user="AQS_MAVEN" password="sunny123"/>
+    <document name="products">
+        <entity name="item" query="SELECT ROWNUM AS ID, STATE_CD, COUNTY_CD, SITE_NUM, PARAMETER_CD, POC, LATITUDE, LONGITUDE, DATUM, PARAMETER_NM, SAMPLE_DURATION, POL_STANDARD, METRIC_USED, METHOD_NM, YEAR, UOM, EVENT_TYPE, OBSERVATION_CNT, OBSERVATION_PCT, VALID_DAY_CNT, REQ_DY_CNT, EXCEPTIONAL_DAY_CNT, NULL_DATA_CNT, PRI_EXCEEDANCE_CNT, SEC_EXCEEDANCE_CNT, CERTIFICATION_INDICATOR, NUM_OBS_BELOW_MDL, MEAN, DEVIATION, MAX_VALUE_1, MAX_DAY_TIME_1, MAX_VALUE_2, MAX_DAY_TIME_2, MAX_VALUE_3, MAX_DAY_TIME_3, MAX_VALUE_4, MAX_DAY_TIME_4, MAX_NON_OVERLAP_1, NO_MAX_DATETIME_1, MAX_NON_OVERLAP_2, NO_MAX_DATETIME_2, PERCENTILE_99, PERCENTILE_98, PERCENTILE_95, PERCENTILE_90, PERCENTILE_75, PERCENTILE_50, PERCENTILE_10, LOCAL_SITE_NM, ADDRESS, STATE_NM, COUNTY_NM, CITY_NM, CBSA_NM, LAST_CHANGE_DT, LATLONG FROM ANNUAL_SUMMARY_DATA">
+		<field column="ID" name="id" />
+		<field column="STATE_CD" name="state_cd" />
+		<field column="COUNTY_CD" name="county_cd" />
+		<field column="SITE_NUM" name="site_num" />
+		<field column="PARAMETER_CD" name="parameter_cd" />
+		<field column="POC" name="poc" />
+		<field column="LATITUDE" name="latitude" />
+		<field column="LONGITUDE" name="longitude" />
+		<field column="DATUM" name="datum" />
+		<field column="PARAMETER_NM" name="parameter_nm" />
+		<field column="SAMPLE_DURATION" name="sample_duration" />
+		<field column="POL_STANDARD" name="pol_standard" />
+		<field column="METRIC_USED" name="metric_used" />
+		<field column="METHOD_NM" name="method_nm" />
+		<field column="YEAR" name="year" />
+		<field column="UOM" name="uom" />
+		<field column="EVENT_TYPE" name="event_type" />
+		<field column="OBSERVATION_CNT" name="observation_cnt" />
+		<field column="OBSERVATION_PCT" name="observation_pct" />
+		<field column="VALID_DAY_CNT" name="valid_day_cnt" />
+		<field column="REQ_DY_CNT" name="req_dy_cnt" />
+		<field column="EXCEPTIONAL_DAY_CNT" name="exceptional_day_cnt" />
+		<field column="NULL_DATA_CNT" name="null_data_cnt" />
+		<field column="PRI_EXCEEDANCE_CNT" name="pri_exceedance_cnt" />
+		<field column="SEC_EXCEEDANCE_CNT" name="sec_exceedance_cnt" />
+		<field column="CERTIFICATION_INDICATOR" name="certification_indicator" />
+		<field column="NUM_OBS_BELOW_MDL" name="num_obs_below_mdl" />
+		<field column="MEAN" name="mean" />
+		<field column="DEVIATION" name="deviation" />
+		<field column="MAX_VALUE_1" name="max_value_1" />
+		<field column="MAX_DAY_TIME_1" name="max_day_time_1" />
+		<field column="MAX_VALUE_2" name="max_value_2" />
+		<field column="MAX_DAY_TIME_2" name="max_day_time_2" />
+		<field column="MAX_VALUE_3" name="max_value_3" />
+		<field column="MAX_DAY_TIME_3" name="max_day_time_3" />
+		<field column="MAX_VALUE_4" name="max_value_4" />
+		<field column="MAX_DAY_TIME_4" name="max_day_time_4" />
+		<field column="MAX_NON_OVERLAP_1" name="max_non_overlap_1" />
+		<field column="NO_MAX_DATETIME_1" name="no_max_datetime_1" />
+		<field column="MAX_NON_OVERLAP_2" name="max_non_overlap_2" />
+		<field column="NO_MAX_DATETIME_2" name="no_max_datetime_2" />
+		<field column="PERCENTILE_99" name="percentile_99" />
+		<field column="PERCENTILE_98" name="percentile_98" />
+		<field column="PERCENTILE_95" name="percentile_95" />
+		<field column="PERCENTILE_90" name="percentile_90" />
+		<field column="PERCENTILE_75" name="percentile_75" />
+		<field column="PERCENTILE_50" name="percentile_50" />
+		<field column="PERCENTILE_10" name="percentile_10" />
+		<field column="LOCAL_SITE_NM" name="local_site_nm" />
+		<field column="ADDRESS" name="address" />
+		<field column="STATE_NM" name="state_nm" />
+		<field column="COUNTY_NM" name="county_nm" />
+		<field column="CITY_NM" name="city_nm" />
+		<field column="CBSA_NM" name="cbsa_nm" />
+		<field column="LAST_CHANGE_DT" name="last_change_dt" />
+		<field column="LATLONG" name="geo_coordiante" />
+        </entity>
+    </document>
+</dataConfig>
